@@ -6,7 +6,7 @@
 
 .c-wrapper:not(.c-wrapper-fluid) .c-header-fixed {
     margin-left: 0px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 3px 2px 3px 0px rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px){
@@ -23,7 +23,7 @@
 }
 
 .c-sidebar {
-    box-shadow: 0 2px 6px 6px rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
     width: 60px;
     margin-top: 52px;
 }
@@ -32,20 +32,20 @@
     height: 60px;
     font-size: 9px;
     flex-flow: wrap;
-    padding: 0px;
+    padding: 0 7px !important;
     align-content: center;
     align-items: center;
     justify-content: center;
 }
 
-.btn-centrado {
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
+.c-sidebar svg {
+    margin-top: 10px;
+}   
+
 
 #sidebar2.c-sidebar p {
     margin-bottom: 0rem;
+    padding-top: 3px !important;
 }
 
 @media (max-width: 991.98px) {
@@ -79,14 +79,15 @@
     height: 90px;
     font-size: 12px;
     // display: block;
-    padding-left: 0px;
+    padding: 0 5px;
     align-content: center;
     align-items: center;
     justify-content: center;
 }
 
-#sidebar2 p {
+#sidebar2 div, p {
     background: transparent !important;
+    padding-top: 5px;
 }
 
 #sidebar2 ul#sidebarnav2 :nth-child(2) {
@@ -110,11 +111,12 @@
 
 .c-header {
     width: 100%;
+    border-bottom: none;
 }
 
 .c-header.c-header-fixed {
     z-index: 10000;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 3px 2px 3px 0px rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 #header2.c-header {
