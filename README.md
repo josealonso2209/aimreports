@@ -4,7 +4,7 @@
 
 ``` bash
 # clone the repo
-$ git clone https://github.com/josealonso2209/aimreports.git
+$ git clone https://aim-agti-vso@dev.azure.com/aim-agti-vso/AIM_REPORTS/_git/AIM_REPORTS
 
 # go into app's directory
 $ cd my-project
