@@ -114,6 +114,15 @@
     border-bottom: none;
 }
 
+#headerNav.avatar{
+    color: white;
+    background-color: #3c4b64 !important;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    margin: 5px 0px;
+}
+
 .c-header.c-header-fixed {
     z-index: 10000;
     box-shadow: 3px 2px 3px 0px rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
@@ -170,7 +179,7 @@
 }
 
 #cardLogin.card{
-    border-radius: 15px !important;
+    border-radius: 10px !important;
     box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -182,6 +191,15 @@
 
 .login .input-group-text {
     background-color: #ffffff !important;
+}
+
+#cardLogin img {
+    margin: 10px 0px;
+}
+
+#cardLogin h2 {
+    margin: 20px 0px;
+    font-size: 22px;
 }
 
 .btn-success {
@@ -229,8 +247,19 @@
     // margin-left: 378px;
     border: 0px;
     width: fit-content;
+    background: white;
+    position: relative;
+    z-index: 1000px;
 }
 
 html:not([dir="rtl"]) .alert-dismissible {
     padding-right: 1.25rem;
+}
+
+#styleModal.opacidadModal {
+    opacity: 0 !important;
+}
+
+#styleModal h5 {
+    color: #dc3545!important;
 }

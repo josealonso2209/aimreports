@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 // import { Link } from 'react-router-dom'
 import {
+  CModal,
+  CModalHeader,
+  CModalTitle,
+  CModalBody,
   CAlert,
   CButton,
   CCard,
@@ -91,11 +95,11 @@ class Login extends Component {
           <CRow className="justify-content-center">
             <CCol md="4">
               <CCardGroup>
-                <CCard  id={'cardLogin'} className="card bg-gradient-secondary">
+                <CCard  id={'cardLogin'} className="card">
                   <CCardBody>
                     <CForm>
                       <img src={logo} width="100%" height="100%" alt="Logo Aim Reports" />
-                      <h2 className="text-center mt-3">Bienvenidos!</h2>
+                      <h2 className="text-center">Bienvenidos!</h2>
                       <CInputGroup className="mb-3">
                         <CInputGroupPrepend>
                           <CInputGroupText>
@@ -125,23 +129,34 @@ class Login extends Component {
                 </CCard>
               </CCardGroup>
             </CCol>
+            <CModal
+              id={'styleModal'}
+              className="opacidadModal"
+              show = {this.state.errAutenticacion}
+              size="xs"
+              // closeButton
+              // onShowChange={this.setState({errAutenticacion: false})}
+            >
+              <CModalHeader closeButton>
+                <CModalTitle id={'styleModalTitle'}className="color-title">
+                  <div>
+                    <div>
+                      <svg width="25px" height="25px" viewBox="0 0 17 16" class="bi bi-exclamation-triangle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M7.938 2.016a.146.146 0 0 0-.054.057L1.027 13.74a.176.176 0 0 0-.002.183c.016.03.037.05.054.06.015.01.034.017.066.017h13.713a.12.12 0 0 0 .066-.017.163.163 0 0 0 .055-.06.176.176 0 0 0-.003-.183L8.12 2.073a.146.146 0 0 0-.054-.057A.13.13 0 0 0 8.002 2a.13.13 0 0 0-.064.016zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                      </svg>
+                      <span style={{marginLeft:'10px', fontSize:'20px'}}>Datos Incorrectos!</span>
+                    </div>
+                  </div>
+                  </CModalTitle>
+              </CModalHeader>
+              <CModalBody>
+                <p style={{fontSize:'16px'}}>
+                  Las credenciales de inicio de sesión son incorrectas.
+                </p>
+            </CModalBody>
+          </CModal>
           </CRow>
-          <CAlert
-            color="danger"
-            show = {this.state.errAutenticacion}
-            size="xs"
-            closeButton
-            // onShowChange={this.setState({errAutenticacion: false})}
-          >
-            <h4 className="alert-heading">Datos Incorrectos!</h4>
-            <p>
-              Las credenciales de inicio de sesión son incorrectas.
-            </p>
-            <hr />
-            <p className="mb-0">
-              Intente nuevamente.
-            </p>
-          </CAlert>
         </CContainer>
       </div>
     )
