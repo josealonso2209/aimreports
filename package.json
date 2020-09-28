@@ -1,26 +1,26 @@
 {
-  "name": "@coreui/coreui-free-react-admin-template",
-  "version": "3.1.0",
-  "description": "CoreUI React Open Source Bootstrap 4 Admin Template",
+  "name": "aim_reports",
+  "version": "1.0.0",
+  "description": "AIM Reports",
   "author": {
-    "name": "CoreUI",
-    "url": "https://coreui.io",
-    "github": "https://github.com/coreui",
-    "twitter": "https://twitter.com/core_ui"
+    "name": "Elecsis",
+    "url": "https://elecsis.co",
+    "github": "https://",
+    "twitter": "https://"
   },
   "contributors": [
     {
-      "name": "CoreUI Team",
-      "url": "https://github.com/orgs/coreui/people"
+      "name": "Elecsis Team",
+      "url": "https://elecsis.co"
     }
   ],
   "homepage": ".",
-  "copyright": "Copyright 2017-2020 creativeLabs Łukasz Holeczek",
+  "copyright": "Copyright 2020 Elecsis",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
+    "url": ""
   },
   "dependencies": {
     "@coreui/chartjs": "^2.0.0",
@@ -65,7 +65,7 @@
     "changelog": "auto-changelog --starting-version 3.0.0 --commit-limit false --hide-credit"
   },
   "bugs": {
-    "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
+    "url": "https://"
   },
   "eslintConfig": {
     "extends": "react-app"

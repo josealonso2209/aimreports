@@ -7,7 +7,6 @@ import {
   CModalHeader,
   CModalTitle,
   CModalBody,
-  CAlert,
   CButton,
   CCard,
   CCardBody,
@@ -82,11 +81,11 @@ class Login extends Component {
     });
 
   }
-
+  
   render() {
     if (this.state.isSignedUp) {
       // Redirecciona al Dashboard al momento de la autenticación
-      return <Redirect to = {{ pathname: "./views/dashboard/Dashboard" }} />;
+      return <Redirect to = {{ pathname: "/dashboard" }} />;
     }
 
     return (
@@ -118,7 +117,7 @@ class Login extends Component {
                       </CInputGroup>
                       <CRow>
                         <CCol xs="12">
-                          <CButton color="success" className="btn-block " onClick={ () => this.loginAxios() }>Ingresar</CButton>
+                          <CButton color="success" className="btn-block " onClick={ () => this.loginAxios()}>Ingresar</CButton>
                         </CCol>
                         <CCol xs="12 mt-3">
                           <CButton color="primary" className="btn-block">Contacto</CButton>

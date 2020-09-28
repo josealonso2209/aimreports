@@ -7,7 +7,6 @@ import {
   CDropdownItem,
   CDropdownMenu,
   CDropdownToggle,
-  CImg
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
@@ -21,7 +20,7 @@ class TheHeaderDropdown extends Component {
   redirectLogin(){
     console.log('entro aqui');
     localStorage.clear();
-    this.props.history.push("/Login");  }
+    this.props.history.push("/");  }
 
   render(){
     return (
