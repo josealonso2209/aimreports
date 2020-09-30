@@ -81,6 +81,15 @@ class Login extends Component {
     });
 
   }
+
+pulsar(e) {
+    if (e.keyCode === 13 && !e.shiftKey) {
+        e.preventDefault();
+        console.log('Pulsaste Enter');
+        var boton = document.getElementById("boton");
+        boton.triggerHandler('click');
+    }
+}
   
   render() {
     if (this.state.isSignedUp) {
@@ -117,7 +126,7 @@ class Login extends Component {
                       </CInputGroup>
                       <CRow>
                         <CCol xs="12">
-                          <CButton color="success" className="btn-block " onClick={ () => this.loginAxios()}>Ingresar</CButton>
+                          <CButton color="success" className="btn-block " onClick={ () => this.loginAxios()} onKeyPress={() =>this.pulsar()} >Ingresar</CButton>
                         </CCol>
                         <CCol xs="12 mt-3">
                           <CButton color="primary" className="btn-block">Contacto</CButton>
